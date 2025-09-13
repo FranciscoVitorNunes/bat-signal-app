@@ -1,16 +1,18 @@
-import React from 'react';
-import { Pressable, Text } from 'react-native';
+import React from "react";
+import { TouchableOpacity, Text, StyleSheet } from "react-native";
 
-import { styles } from './BatButtonStyles';
+import { styles } from "./BatButtonStyles"
 
-interface Buttontext{
-    text: string
+interface Props {
+  text: string;
+  onPress: () => void;
 }
 
-export function BatButton(props: Buttontext) {
+export default function BatButton({ text, onPress }: Props) {
   return (
-    <Pressable style={styles.button}>
-      <Text style={styles.text}>{props.text}</Text>
-    </Pressable>
+    <TouchableOpacity style={styles.button} onPress={onPress}>
+      <Text style={styles.text}>{text}</Text>
+    </TouchableOpacity>
   );
 }
+

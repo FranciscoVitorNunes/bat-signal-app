@@ -1,11 +1,18 @@
-import { View } from 'react-native';
-import { Home } from './src/Screens/Home/Home';
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import Home from "./src/Screens/Home";
 
 export default function App() {
   return (
-    <View>
-      <Home></Home>
+    <View style={styles.container}>
+      <Home />
     </View>
   );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f4f4f9"
+  }
+});
