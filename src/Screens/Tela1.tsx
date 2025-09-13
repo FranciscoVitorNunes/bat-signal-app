@@ -11,7 +11,7 @@ export default function Tela1({ onNext }: Props) {
     <View style={styles.container}>
       <BatLogo
         imageSize={120}
-        buttonText="Abrir Formulário"
+        buttonText="Ativar Bat Sinal"
         onPress={onNext}
       />
     </View>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Button, StyleSheet } from "react-native";
 import BatTextInput from "../BatTextInput/BatTextInput";
+import BatButton from "../BatButton/BatButton";
 
 export default function BatForm() {
   const [formData, setFormData] = useState({
@@ -43,13 +44,13 @@ export default function BatForm() {
         multiline
       />
 
-      <Button title="Enviar" onPress={handleSubmit} />
+      <BatButton text="Enviar" onPress={handleSubmit} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%"
+    width: "90%"
   }
 });
