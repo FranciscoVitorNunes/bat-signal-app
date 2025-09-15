@@ -22,7 +22,8 @@ Aplicativo simples em **React Native + Expo + TypeScript** que demonstra:
 ```
 bat-signal-app/
 │── App.tsx                 # Ponto de entrada -> chama Home
-│
+│── assets/
+│   ├── logo.png            # Logo do app 
 ├── src/
 │   ├── screens/
 │   │   ├── Home.tsx        # Controla a lógica -> alterna Tela1 e Tela2
@@ -34,6 +35,8 @@ bat-signal-app/
 │   │   ├── BatLogo.tsx         # Componente de imagem + botão
 │   │   ├── BatTextInput.tsx    # Label + TextInput (para formulário)
 │   │   ├── BatForm.tsx         # Monta o formulário com vários BatTextInput
+│   │
+├── arquivos de configuração (package.json, tsconfig.json, etc.)
 ```
 
 ---
